@@ -1,0 +1,12 @@
+jdbcUrl = jdbc:mysql://{DB_HOST}/{DB_NAME}?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+user = {DB_USER}
+password = {DB_PWD}
+devMode = false
+memcacheAddrs = {MC_ADDR}
+memcachePrefix = dash:
+uicInternal = {UIC_URL}
+uicExternal = {UIC_URL}
+builder = {BUILDER_URL}
+server = {SERVER_URL}
+paasDomain = {DOMAIN}
+token = {UIC_TOKEN}

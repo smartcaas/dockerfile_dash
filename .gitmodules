@@ -1,0 +1,3 @@
+[submodule "dash"]
+	path = dash
+	url = https://git.oschina.net/cnperl/dinp-dash.git
