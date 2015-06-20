@@ -18,7 +18,7 @@ for i in ${require_env[@]}; do
         exit 1;
     fi
 done
-configFile=${APP_DIR}/uic/web/WEB-INF/config.txt
+configFile=${APP_DIR}/dash/web/WEB-INF/config.txt
 sed -i "s/{DB_HOST}/${MYSQL_PORT_3306_TCP_ADDR}/g" $configFile \
 && sed -i "s/{DB_NAME}/${DB_NAME}/g" $configFile \
 && sed -i "s/{DB_USER}/${DB_USER}/g" $configFile \
