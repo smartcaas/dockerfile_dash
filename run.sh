@@ -23,6 +23,10 @@ sed -i "s/{DB_HOST}/${MYSQL_PORT_3306_TCP_ADDR}/g" $configFile \
 && sed -i "s/{DB_NAME}/${DB_NAME}/g" $configFile \
 && sed -i "s/{DB_USER}/${DB_USER}/g" $configFile \
 && sed -i "s/{DB_PWD}/${DB_PWD}/g" $configFile \
+&& sed -i "s/{UIC_URL}/${UIC_URL}/g" $configFile \
 && sed -i "s/{UIC_TOKEN}/${UIC_TOKEN}/g" $configFile \
+&& sed -i "s/{BUILDER_URL}/${BUILDER_URL}/g" $configFile \
+&& sed -i "s/{SERVER_URL}/${SERVER_URL}/g" $configFile \
+&& sed -i "s/{DOMAIN}/${DOMAIN}/g" $configFile \
 && sed -i "s/{MC_ADDR}/${MEMCACHED_PORT_11211_TCP_ADDR}:${MEMCACHED_PORT_11211_TCP_PORT}/g" $configFile
 catalina.sh run
